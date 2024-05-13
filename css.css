@@ -1,0 +1,25 @@
+.container {
+    display: none;
+  }
+
+  div {
+    margin: 12px;
+    border: 12px black solid;
+    padding: 12px;
+    border-radius: 22px;
+  }
+header {background-color: black;
+height: 30px;}
+header a {
+padding: 12px;
+}
+a { color: white;}
+a:hover {
+color:yellow
+}
+body {
+    background-color:lightcyan;
+    border: 12 px black double;
+    padding: 12px;
+    margin: 12px;
+}

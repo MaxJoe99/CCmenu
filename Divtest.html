@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Show Only Selected Div</title>
+<link rel="stylesheet" type="text/css" href="css.css" />
+</head>
+<body>
+  <header>
+            
+    <a href="#"> Index</a>
+    <a href="CcGroceries.html"> Grocery List</a>
+    <a href="CcMenu.html"> Menu List</a>
+  </header>
+<div class="container" id="container1">Div 1 Content</div>
+<div class="container" id="container2">Div 2 Content</div>
+<div class="container" id="container3">Div 3 Content</div>
+
+<p>Click to show respective div:</p>
+<button onclick="showDiv(1)">Show Div 1</button>
+<button onclick="showDiv(2)">Show Div 2</button>
+<button onclick="showDiv(3)">Show Div 3</button>
+
+<script>
+  function showDiv(num) {
+    // Hide all divs
+    var divs = document.querySelectorAll('.container');
+    divs.forEach(function(div) {
+      div.style.display = 'none';
+    });
+
+    // Show only the selected div
+    var selectedDiv = document.getElementById('container' + num);
+    if (selectedDiv) {
+      selectedDiv.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>
