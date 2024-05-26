@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Div by Day</title>
+    <style>
+        .container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1" class="container">Container 1</div>
+    <div id="container2" class="container">Container 2</div>
+    <div id="container3" class="container">Container 3</div>
+    <div id="container4" class="container">Container 4</div>
+    <div id="container5" class="container">Container 5</div>
+    <div id="container6" class="container">Container 6</div>
+    <div id="container7" class="container">Container 7</div>
+    <div id="container8" class="container">Container 8</div>
+    <div id="container9" class="container">Container 9</div>
+    <div id="container10" class="container">Container 10</div>
+    <div id="container11" class="container">Container 11</div>
+    <div id="container12" class="container">Container 12</div>
+
+    <script>
+        // Start date
+        const startDate = new Date('2024-05-20');
+    
+        // Calculate the current date
+        const today = new Date();
+        const timeDiff = today - startDate;
+        const dayDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+    
+        // Determine which container to show
+        const containerNumber = (dayDiff % 12) + 1; // Ensure it cycles through 1 to 12
+    
+        // Display the appropriate container
+        document.getElementById(`container${containerNumber}`).style.display = 'block';
+    </script>
+    
+</body>
+</html>

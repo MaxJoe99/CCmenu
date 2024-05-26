@@ -5,16 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="css.css" />
+  
+  
 </head>
 <body>
   <header>
-            
-    <a href="#" style="color: gray;"> Index</a>
-    <a href="CcGroceries.html"> Grocery List</a>
-    <a href="CcMenu.html"> Menu List</a>
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#" style="color: gray;"> Index</a>
+        <a href="CcGroceries.html"> Grocery List</a>
+        <a href="CcMenu.html" > Menu List</a>
+      </div>
+    </div>
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()" id="menuSide">
+      <img src="menu.png" alt="Menu" width="50" height="60">
+    </span>
   </header>
 
 <h1></h1>
 
+
+<script src="menu.js"></script>
 </body>
 </html>
