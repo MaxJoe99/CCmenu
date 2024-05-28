@@ -74,3 +74,9 @@ body {
 }
 
 
+
+.borders01 
+{
+  border: 12px black solid;
+  padding: 1em;
+}
